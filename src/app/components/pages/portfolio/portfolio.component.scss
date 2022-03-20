@@ -10,6 +10,15 @@
     }
 }
 
+.card{
+    transition: .4s;
+    cursor: pointer;
+}
+.card:hover{
+    transform:scale(1.01);
+    box-shadow: .3rem .3rem rgba(0,0,0,0.1)!important
+}
+
 @media screen and(max-width:962px){
     .portfolio-section{
         .card{

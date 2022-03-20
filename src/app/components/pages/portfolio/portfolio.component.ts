@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  public proyects = [1,2,3,4,5,6,7,8,9,10]
+  public proyects = [1,2,3,4,5,6]
   
   constructor() { }
 
