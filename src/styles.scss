@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@import './main-colors';
+@import '~bootstrap/scss/bootstrap';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.first-section{
+    margin-top: 10vh !important;
+}
+
+.full-viewport-img{
+    width: 100vw;
+    height: 90vh;
+}
+
+.secondary-text{
+    color: $secondary-color;
+}
+
+.main-container{
+    height: 90vh;
+    width: 100vw;
+}
+
+
+
+.primary-text{
+    color: rgba($primary-color, 0.7);
+}
+
+.primary-text-secondary{
+    color: rgba($primary-color, 0.5);
+}
+
+.giant-font{
+    font-size: clamp(3rem, 1.5vw, 5rem);
+}
+
+.giant-font-secondary{
+    font-size: clamp(2rem, 1.5vw, 4rem);
+}
+
+.main-container{
+    width: 100vw;
+    min-height: 100vh;
+    margin-top:10vh;
+    
+}
+.secondary-section{
+    background-color: $primary-color;
+    height: auto;
+}
+
+.info-section{
+    background-color: $white;
+    height: auto;
+}
+
+.main-section{
+    background-color: $main-color;
+}
+
+
+@media screen and(max-width:768px) {
+    .full-viewport-img{
+        width: 100vw;
+        height: 50vh;
+    }
+}

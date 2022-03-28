@@ -1,0 +1,20 @@
+@import '../../../../main-colors.scss';
+
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    background-color: $main-color;
+}
+
+.navbar-brand-font-size{
+    font-size: clamp(1rem, 1.5vw, 3rem);
+}
+
+@media screen and (max-width:768px){
+    .full-panel{
+        height: 100vh;
+        padding-top: 2rem;
+        background-color: rgba($main-color, 0.8);
+        
+    }
+}

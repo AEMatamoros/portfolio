@@ -1,0 +1,52 @@
+@import '../../../../main-colors';
+
+.portfolio-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .card{
+        width: 23%;
+    }
+}
+.father{
+    position:relative;
+}
+.wave{
+    position: absolute;
+    width: 100vw;
+}
+
+.wave.top{
+    top: 0;
+    background-color: $main-color ;
+}
+
+.wave.bottom{
+    bottom: 0;
+    background-color: $main-color ;
+}
+
+@media screen and(max-width:962px){
+    .portfolio-section{
+        .card{
+            width: 30%;
+        }
+    }
+}
+
+@media screen and(max-width:768px){
+    .portfolio-section{
+        .card{
+            width: 45%;
+        }
+    }
+}
+
+@media screen and(max-width:567px){
+    .portfolio-section{
+        .card{
+            width: 90%;
+        }
+    }
+}

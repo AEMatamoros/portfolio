@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand navbar-brand-font-size" href="#"> 
+          <img src="assets/icons/json.svg" alt="Icon" class="w-50 h-50">
+        </a>
+        <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse row" id="navbarsDefault">
+          <ul class="navbar-nav mr-auto full-panel col-6">
+              <li class="nav-item pl-4 ">
+                <a class="nav-link">
+                    Sobre mi
+                </a>
+                </li>
+                <li class="nav-item pl-4 ">
+                    <a class="nav-link">
+                        Habilidades
+                    </a>
+                </li>
+                <li class="nav-item pl-4 ">
+                    <a class="nav-link">
+                        Trabajo
+                    </a>
+                </li>
+                <li class="nav-item pl-4  dropdown" ngbDropdown>
+                  <a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Contacto</a>
+                  <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+                    <a class="dropdown-item" href="#">Linked In</a>
+                    <a class="dropdown-item" href="#">Github</a>
+                    <a class="dropdown-item" href="#">Escribeme</a>
+                  </div>
+                </li>
+          </ul>
+          <ul class="navbar-nav mr-auto full-panel col-6 d-m d-none d-sm-block d-md-none px-2 d-flex align-items-center">
+            <li class="nav-item pl-4 ">
+                Section 2
+                <!-- <img src="assets/img/profile.jpg" alt="profile-img" class="img-fluid" width="160rem" height="16rem"> -->
+            </li>
+          </ul>
+        </div>
+</nav>
