@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
 
   onWindowScroll() {
     let navbar = document.querySelector('.navbar') as HTMLElement;
-    let navbarMobile = document.querySelector('.navbar-nav') as HTMLElement;
+    //let navbarMobile = document.querySelector('.navbar-nav') as HTMLElement;
     let navigationItemType1 = document.querySelectorAll('.nav-link');
     let navigationItemType2 = document.querySelectorAll('.dropdown-item');
     let navigationItemType3 = document.querySelectorAll('.nav-item');
@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
     if (window.pageYOffset > navbar.clientHeight) {
       this.dinamicIcon = "assets/icons/jsonalter.svg";
       navbar.classList.add('navbar-inverse');
-      navbarMobile.classList.add('navbar-inverse');
+      //navbarMobile.classList.add('navbar-inverse');
       navigationItemType1.forEach(node=>{
         node.classList.add('text-dark')
       })
@@ -46,7 +46,7 @@ export class HeaderComponent implements OnInit {
     } else {
       this.dinamicIcon = "assets/icons/json.svg";
       navbar.classList.remove('navbar-inverse');
-      navbarMobile.classList.remove('navbar-inverse');
+      //navbarMobile.classList.remove('navbar-inverse');
       navigationItemType1.forEach(node=>{
         node.classList.remove('text-dark')
       })
