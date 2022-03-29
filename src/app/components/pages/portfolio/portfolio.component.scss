@@ -9,23 +9,6 @@
         width: 23%;
     }
 }
-.father{
-    position:relative;
-}
-.wave{
-    position: absolute;
-    width: 100vw;
-}
-
-.wave.top{
-    top: 0;
-    background-color: $main-color ;
-}
-
-.wave.bottom{
-    bottom: 0;
-    background-color: $main-color ;
-}
 
 @media screen and(max-width:962px){
     .portfolio-section{

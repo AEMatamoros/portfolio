@@ -33,7 +33,24 @@ html{
     width: 100vw;
 }
 
+.father{
+    position:relative;
+}
 
+.wave{
+    position: absolute;
+    width: 100vw;
+}
+
+.wave.top{
+    top: 0;
+    background-color: $main-color ;
+}
+
+.wave.bottom{
+    bottom: 0;
+    background-color: $main-color ;
+}
 
 .primary-text{
     color: rgba($primary-color, 0.7);
