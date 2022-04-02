@@ -1,0 +1,33 @@
+<ng-template #content let-modal>
+    <div class="modal-header bg-main">
+      <h4 class="modal-title text-white" id="modal-basic-title">Contactame</h4>
+      <button type="button" class="btn" aria-label="Close" (click)="modal.dismiss('Cross click')"><i class="fa-solid fa-xmark fa-1x text-white"></i></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="dateOfBirth">Nombre</label>
+          <div class="input-group">
+            <input id="name" class="form-control" placeholder="Usuario" name="name" autocomplete="off">
+          </div>
+          <label for="dateOfBirth">Correo</label>
+          <div class="input-group">
+            <input id="correo" class="form-control" placeholder="Usuario@gmail.com" correo="correo" autocomplete="off">
+          </div>
+          <label for="dateOfBirth">Mensaje</label>
+          <div class="input-group">
+            <textarea class="form-control" id="nameinput"  autocomplete="off" placeholder="Mensaje...">
+              
+            </textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark form-control" (click)="modal.close('Save click')">Enviar</button>
+    </div>
+  </ng-template>
+  <span (click)="open(content)" class="p-0 m-0">Contactame</span>
+
+  
+  

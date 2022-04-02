@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" (scroll)="onWindowScroll();">
-        <a class="navbar-brand navbar-brand-font-size" href="#"> 
+        <a class="navbar-brand navbar-brand-font-size" href="#home"> 
           <img [src]="dinamicIcon" alt="Icon" class="w-50 h-50">
         </a>
         <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,26 +8,27 @@
         <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse row" id="navbarsDefault">
           <ul class="navbar-nav mr-auto full-panel panel-original-bg col-12 mt-2">
               <li class="nav-item pl-4 ">
-                <a class="nav-link">
+                <a class="nav-link" href="#home">
                     Sobre mi
                 </a>
                 </li>
                 <li class="nav-item pl-4 ">
-                    <a class="nav-link">
+                  <a class="nav-link" href="#work">
+                      Trabajo
+                  </a>
+              </li>
+                <li class="nav-item pl-4 ">
+                    <a class="nav-link" href="#skills">
                         Habilidades
                     </a>
                 </li>
-                <li class="nav-item pl-4 ">
-                    <a class="nav-link">
-                        Trabajo
-                    </a>
-                </li>
                 <li class="nav-item pl-4  dropdown" ngbDropdown>
-                  <a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Contacto</a>
+                  <a class="nav-link dropdown-toggle" id="id01"  ngbDropdownToggle>Contacto</a>
                   <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-                    <a class="dropdown-item" href="#">Linked In</a>
-                    <a class="dropdown-item" href="#">Github</a>
-                    <a class="dropdown-item" href="#">Escribeme</a>
+                    <a class="dropdown-item" >Linked In</a>
+                    <a class="dropdown-item" >Github</a>
+                    <a class="dropdown-item" ><app-contact-modal #contactModal></app-contact-modal>
+                    </a>
                   </div>
                 </li>
           </ul>

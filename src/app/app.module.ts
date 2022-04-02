@@ -16,6 +16,8 @@ import { CaruselComponent } from './components/pages/carusel/carusel.component';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { SkillsComponent } from './components/pages/skills/skills.component';
 import { LoaderComponent } from './components/layouts/loader/loader.component';
+import { CardComponent } from './components/shareds/card/card.component';
+import { ContactModalComponent } from './components/shareds/contact-modal/contact-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { LoaderComponent } from './components/layouts/loader/loader.component';
     CaruselComponent,
     PortfolioComponent,
     SkillsComponent,
-    LoaderComponent
+    LoaderComponent,
+    CardComponent,
+    ContactModalComponent
   ],
   imports: [
     BrowserModule,
