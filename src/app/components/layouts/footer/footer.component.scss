@@ -2,6 +2,7 @@
 .footer{
     height: 30vh;
     width: 100vw;
+    max-width: 100vw;
     background-color: $footer-color;
     display: flex;
     justify-content: center;
