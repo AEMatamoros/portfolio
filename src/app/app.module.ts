@@ -15,6 +15,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { CaruselComponent } from './components/pages/carusel/carusel.component';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { SkillsComponent } from './components/pages/skills/skills.component';
+import { LoaderComponent } from './components/layouts/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SkillsComponent } from './components/pages/skills/skills.component';
     AboutComponent,
     CaruselComponent,
     PortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
