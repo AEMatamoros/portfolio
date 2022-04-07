@@ -18,6 +18,8 @@ import { SkillsComponent } from './components/pages/skills/skills.component';
 import { LoaderComponent } from './components/layouts/loader/loader.component';
 import { CardComponent } from './components/shareds/card/card.component';
 import { ContactModalComponent } from './components/shareds/contact-modal/contact-modal.component';
+import { ProyectsComponent } from './components/pages/proyects/proyects.component';
+import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { ContactModalComponent } from './components/shareds/contact-modal/contac
     SkillsComponent,
     LoaderComponent,
     CardComponent,
-    ContactModalComponent
+    ContactModalComponent,
+    ProyectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
